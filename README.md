@@ -1,2 +1,2 @@
 # Grocer-Tracking-App
-An app made in C++ to track how often certain purchases are made from a supermarket.
+The Grocer Tracking App is a simple C++ application that allows users to track items from a grocery list. The app reads a list of grocery items from a file and then lets the user interact with the data. The user can search for an item, print all items with their frequency, and even visualize the frequency of each item as a histogram. The application also has a backup feature that saves the frequency of each item to a separate file.
