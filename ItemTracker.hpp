@@ -1,25 +1,25 @@
-#pragma once 
+#pragma once // Guards against multiple inclusion
+
 #include <map>
 #include <string>
 
 class ItemTracker {
 private:
-    // Map to store items and their frequencies
-    std::map<std::string, int> items;
+    std::map<std::string, int> items;  // Map to store items and their frequencies
 
 public:
-    // Load items from a file and track their occurrences
+    // Loads items from the given filename and calculates their frequencies
     void loadFromFile(const std::string& filename);
 
-    // Save items and their frequencies to a backup file
+    // Saves the item frequencies to a backup file named "frequency.dat"
     void saveToBackup();
 
-    // Get the count of a specific item
+    // Returns the frequency of a specified item
     int getItemCount(const std::string& item);
 
-    // Display all items and their frequencies
+    // Prints all the items and their frequencies
     void printItems();
 
-    // Display a histogram of items and their frequencies
+    // Prints a visual representation (histogram) of item frequencies
     void printHistogram();
 };
