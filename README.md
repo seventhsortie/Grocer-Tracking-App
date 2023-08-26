@@ -12,5 +12,8 @@ The Grocer Tracking App is a simple C++ application that allows users to track i
 
 <h2>How To Run</h2>
 <p><ol>
-  <li>Make sure you have g++ installed.</li>
+  <li>Make sure you have <tt>g++</tt> installed.</li>
+  <li>Compile the project using the command:
+  <tt>g++ -std=c++11 main.cpp ItemTracker.cpp -o ItemTracker</tt>.</li>
+  <li>Run with <tt>./ItemTracker</tt>.</li>
 </ol></p>
